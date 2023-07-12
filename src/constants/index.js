@@ -69,7 +69,7 @@ const Donderdag = [
     {
         img: show_img,
         img_desk: show_img_desk,
-        name: "Charlee",
+        name: "Freaky",
         time: "23:00",
         place: "Lovelee, Amsterdam",
         age: "18+",
@@ -79,7 +79,7 @@ const Donderdag = [
     {
         img: show_img,
         img_desk: show_img_desk,
-        name: "Charlee",
+        name: "Mimi",
         time: "23:00",
         place: "Lovelee, Amsterdam",
         age: "18+",
@@ -89,33 +89,14 @@ const Donderdag = [
     {
         img: show_img,
         img_desk: show_img_desk,
-        name: "Charlee",
-        time: "23:00",
-        place: "Lovelee, Amsterdam",
-        age: "18+",
-        ticket: "Gastenlijst",
-        tooltip: "We zetten jouw naam op de gastenlijst, <br />zodat je gratis of goedkoper<br /> naar binnen kan."
-    },
-    {
-        img: show_img,
-        img_desk: show_img_desk,
-        name: "Charlee",
-        time: "23:00",
-        place: "Lovelee, Amsterdam",
-        age: "18+",
-        ticket: "Gastenlijst",
-        tooltip: "We zetten jouw naam op de gastenlijst, <br />zodat je gratis of goedkoper<br /> naar binnen kan."
-
-    },{
-        img: show_img,
-        img_desk: show_img_desk,
-        name: "Charlee",
+        name: "Super Social",
         time: "23:00",
         place: "Lovelee, Amsterdam",
         age: "18+",
         ticket: "Vriendenticket",
         tooltip: "Voor dit event verzekeren wij jou<br />van het aller goedkoopste <br />kaartje doormiddel een vriendenticket."
     },
+    
 ]
 
 const Vrijdag = [

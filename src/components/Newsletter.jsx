@@ -2,7 +2,7 @@
 
 function Newsletter() {
   return (
-    <div className="newsletter bg-deep-black w-full flex flex-col px-4 gap-2 py-5 pt-10 max-w-screen-lg md:px-7 md:mx-auto pb-20 ">
+    <div className="gradient-border newsletter bg-deep-black w-full flex flex-col px-4 gap-2 py-5 pt-10 max-w-screen-lg md:px-7 md:mx-auto pb-20 ">
       <h1 className="text-2xl font-semibold lg:text-3xl">Join our newsletter</h1>
       <p className="text-color-grey-500 text-sm lg:text-lg">Every party - straight to your inbox</p>
       <form action="#" className="flex gap-2 max-w-screen-md">

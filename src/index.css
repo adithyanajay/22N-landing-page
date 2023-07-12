@@ -33,3 +33,10 @@
 .app {
   width: 100%;
 }
+
+.gradient-border::after {
+  content: "";
+  background-image: linear-gradient(90deg, #8932F6 0%, #F971BA 100%);
+  height: 1px;
+  margin-top: 20px;
+}
