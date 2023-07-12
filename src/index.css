@@ -9,7 +9,12 @@
 }
 
 
-
+:root {
+  --rt-color-white: white;
+  --rt-color-dark: #5559DF;
+ 
+  
+}
 
 /* css default changes */
 * {

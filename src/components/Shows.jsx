@@ -12,7 +12,7 @@ function Shows({name, date,list }) {
         <div className="shows">
           {list.map((data, key)=> {
             return(
-              <ShowCards name={data.name} img={data.img} place={data.place} age={data.age} ticket={data.ticket} time={data.time} key={key} /> 
+              <ShowCards name={data.name} img={data.img} place={data.place} age={data.age} ticket={data.ticket} time={data.time} key={key} img_desk={data.img_desk} tooltip_text={data.tooltip}/> 
             )
           })}
         </div>

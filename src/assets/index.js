@@ -12,7 +12,9 @@ import show_img from './show-img.png'
 import show_img_2 from './show-img-2.png'
 import bigLogo from "./bigLogo.svg"
 import close from "./close.svg";
-
+import tooltip from "./tooltip.svg"
+import show_img_desk from './img-desk.png'
+import show_img_2_desk from './img-2-desk.png'
 export {
     hero_desk,
     hero_mob,
@@ -26,5 +28,9 @@ export {
     show_img,
     show_img_2,
     bigLogo,
-    close
+    close,
+    tooltip,
+    show_img_desk,
+    show_img_2_desk
+
 }

@@ -16,8 +16,9 @@ export default {
         "color-bg-black" : "#0D0B0C",
         "color-glassy" : "rgba(109, 109, 112, 0.8)",
         "btn-purple": "#8932F6",
-        "deep-black": "#000000"
-  
+        "deep-black": "#000000",
+        "tag-bg-color"  : "#EEEEFC",
+        "tag-text-color" : "#5559DF"
       },
       backgroundImage : {
         'hero-mobile' : "url('./src/assets/hero-mobile.png')",

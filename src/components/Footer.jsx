@@ -9,7 +9,7 @@ function Footer() {
           <p>Privacy Policy</p>
           <p>Terms of Conditions</p>
         </div>
-        <p className="block">22NIGHTS BV. All rights reserved.</p>
+        <p className="inline-block w-full">22NIGHTS BV. All rights reserved.</p>
       </div>
     </footer>
   );
