@@ -10,11 +10,11 @@
 
 
 :root {
-  --rt-color-white: white;
-  --rt-color-dark: #5559DF;
+  --rt-color-dark: white;
  
   
-}
+} 
+
 
 /* css default changes */
 * {
