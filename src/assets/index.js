@@ -15,6 +15,10 @@ import close from "./close.svg";
 import tooltip from "./tooltip.svg"
 import show_img_desk from './img-desk.png'
 import show_img_2_desk from './img-2-desk.png'
+import guestList from "./guestlist.svg"
+import friendTicket from "./friendTicket.svg"
+import circle from "./circle.svg"
+
 export {
     hero_desk,
     hero_mob,
@@ -31,6 +35,9 @@ export {
     close,
     tooltip,
     show_img_desk,
-    show_img_2_desk
+    show_img_2_desk,
+    guestList,
+    friendTicket,
+    circle
 
 }

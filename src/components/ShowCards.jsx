@@ -32,7 +32,7 @@ function ShowCards({
           <div className="ticket bg-tag-bg-color px-1 rounded-md text-tag-text-color flex items-center justify-center gap-1">
             {ticket}
             <span
-              className="tooltip "
+              className="tooltip cursor-pointer"
               data-tooltip-id="my-tooltip-html-prop"
               data-tooltip-place="right"
             >
@@ -41,6 +41,7 @@ function ShowCards({
                 id="my-tooltip-html-prop"
                 openOnClick="true"
                 html={`<div style= "color:#5559DF;" >${tooltip_text} </div>`}
+                className="tooltip"
               />
             </span>
           </div>

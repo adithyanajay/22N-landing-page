@@ -1,4 +1,4 @@
-import { amsterdam, calendar, rotterdam, show_img, show_img_2, show_img_2_desk, show_img_desk, weekend } from "../assets";
+import { amsterdam, calendar, friendTicket, guestList, rotterdam, show_img, show_img_2, show_img_2_desk, show_img_desk, weekend } from "../assets";
 
 export const categories = [
     {
@@ -25,6 +25,33 @@ export const calendar_info = [
     {
         img: calendar,
         text: "Kies datum"
+    },
+]
+
+export const searchList = [
+    {
+        img: guestList,
+        title: "Charlee - Lovelee",
+        date: "8 juni 23:00",
+        place: "Gastenlijst"
+    },
+    {
+        img: guestList,
+        title: "Freaky - Supperclub",
+        date: "8 juni 23:00",
+        place: "Gastenlijst"
+    },
+    {
+        img: guestList,
+        title: "Mimi - Chin Chin",
+        date: "8 juni 23:00",
+        place: "Gastenlijst"
+    },
+    {
+        img: friendTicket,
+        title: "Super Social - Chicago Social Club",
+        date: "8 juni 23:00",
+        place: "Gastenlijst"
     },
 ]
 
