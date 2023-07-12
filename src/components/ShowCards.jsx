@@ -1,16 +1,20 @@
-
 import { tooltip } from "../assets";
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
-function ShowCards({ img,img_desk, name, time, place, age, ticket,tooltip_text }) {
-
- 
+function ShowCards({
+  img,
+  img_desk,
+  name,
+  time,
+  place,
+  age,
+  ticket,
+  tooltip_text,
+}) {
   return (
-    
     <div className="bg-color-grey-800 flex items-center gap-5 my-5 rounded-md  hover:shadow-sm transition-all duration-500">
-   
       <div className="showcard-imgbg-red-50">
-        <img src={img} alt="show-image w-full" className="md:hidden"/>
+        <img src={img} alt="show-image w-full" className="md:hidden" />
         <img src={img_desk} alt="" className="hidden md:block w-full" />
       </div>
       <div className="content w-3/5  flex flex-col lg:gap-3">
@@ -27,12 +31,19 @@ function ShowCards({ img,img_desk, name, time, place, age, ticket,tooltip_text }
           </div>
           <div className="ticket bg-tag-bg-color px-1 rounded-md text-tag-text-color flex items-center justify-center gap-1">
             {ticket}
-            <span className="tooltip "  data-tooltip-id="my-tooltip-html-prop"  data-tooltip-place="right"  >
+            <span
+              className="tooltip "
+              data-tooltip-id="my-tooltip-html-prop"
+              data-tooltip-place="right"
+            >
               <img src={tooltip} alt="tooltip" />
-              <ReactTooltip id="my-tooltip-html-prop"  openOnClick="true" html={`<div style= "color:#5559DF;" >${tooltip_text} </div>`} />
+              <ReactTooltip
+                id="my-tooltip-html-prop"
+                openOnClick="true"
+                html={`<div style= "color:#5559DF;" >${tooltip_text} </div>`}
+              />
             </span>
           </div>
-          
         </div>
       </div>
     </div>
