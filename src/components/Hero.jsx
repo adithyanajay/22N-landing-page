@@ -13,12 +13,12 @@ function Hero() {
           <span className="block">Gasetenlijst</span>
           <span className="block">Amsterdam</span>
         </h1>
-        <div className="search-bar w-11/12 mx-auto  px-2 flex justify-center items-center gap-3 bg-color-grey-100 rounded-md border border-b-2 border-color-border-linear-gradient max-w-screen-sm">
-          <img src={search_img} alt="" className="w-1/12" />
+        <div className="search-bar w-11/12 mx-auto  px-2 lg:px-0 flex justify-center items-center gap-3 bg-color-grey-100 rounded-md border border-b-2 border-color-border-linear-gradient max-w-screen-sm">
+          <img src={search_img} alt="" className="w-1/12 lg:w-10" />
           <input
             type="text"
             placeholder="Zoek evenement, clubavond, festival"
-            className="w-10/12 py-3 text-sm outline-none bg-color-grey-100 "
+            className="w-10/12 py-3 text-sm outline-none bg-color-grey-100 text-black"
           />
         </div>
         <div className="categories flex justify-left items-center gap-5 w-11/12 mx-auto">

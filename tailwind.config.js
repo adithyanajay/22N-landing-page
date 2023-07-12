@@ -15,7 +15,8 @@ export default {
         "color-grey-800" : "#262123",
         "color-bg-black" : "#0D0B0C",
         "color-glassy" : "rgba(109, 109, 112, 0.8)",
-        "btn-purple": "#8932F6"
+        "btn-purple": "#8932F6",
+        "deep-black": "#000000"
   
       },
       backgroundImage : {
