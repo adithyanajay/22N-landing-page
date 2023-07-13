@@ -49,7 +49,7 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link bg-btn-purple px-4 py-3 rounded-md hover:bg-transparent hover:border border-color-grey-300">
+          <a href="#" className="nav-link bg-btn-purple px-4 py-3 rounded-md hover:bg-transparent border border-transparent hover:border-color-grey-100">
             Inloggen
 
           </a>
@@ -68,7 +68,7 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link bg-btn-purple px-4 py-3 rounded-md hover:bg-transparent hover:border border-color-grey-300">
+          <a href="#" className="nav-link bg-btn-purple px-4 py-3 rounded-md hover:bg-transparent border border-transparent hover:border-color-grey-100">
             Inloggen
 
           </a>
