@@ -11,6 +11,7 @@ export default {
       colors : {
         "color-grey-100": "#F2EBEF",
         "white": "#FFFF",
+        "color-grey-400": "#B2A6AD",
         "color-grey-500": "#998E94",
         "color-grey-600": "#80737A",
         "color-grey-800" : "#262123",

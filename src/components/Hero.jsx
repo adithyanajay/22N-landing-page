@@ -7,6 +7,17 @@ import Searchlist from "./Searchlist";
 function Hero() {
   const [search, setSearch] = useState(false);
 
+  
+  const searchListClose = (e) => {
+    if(search){
+      if(e.target.id!="searchlistbox" && e.target.id!="search-input"){
+        setSearch(false);
+      }
+    }
+    
+  }
+
+  document.addEventListener("click", searchListClose)
 
 
   return (
@@ -27,7 +38,7 @@ function Hero() {
             placeholder="Zoek evenement, clubavond, festival"
             className="w-10/12 py-3 text-sm outline-none bg-color-grey-100 text-black"
             onFocus={()=>setSearch(true)}
-            onBlur={()=>setSearch(false)}
+            onClick={()=>location.href="#search-input"}
           />
         </div>
         <Searchlist display={search}/>

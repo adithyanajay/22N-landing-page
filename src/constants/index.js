@@ -30,24 +30,28 @@ export const calendar_info = [
 
 export const searchList = [
     {
+        content_id: "show-1",
         img: guestList,
         title: "Charlee - Lovelee",
         date: "8 juni 23:00",
         place: "Gastenlijst"
     },
     {
+        content_id: "show-2",
         img: guestList,
         title: "Freaky - Supperclub",
         date: "8 juni 23:00",
         place: "Gastenlijst"
     },
     {
+        content_id:"show-3",
         img: guestList,
         title: "Mimi - Chin Chin",
         date: "8 juni 23:00",
         place: "Gastenlijst"
     },
     {
+        content_id:"show-4",
         img: friendTicket,
         title: "Super Social - Chicago Social Club",
         date: "8 juni 23:00",
@@ -57,42 +61,46 @@ export const searchList = [
 
 const Donderdag = [
     {
+        content_id:"show-1",
         img: show_img,
         img_desk: show_img_desk,
         name: "Charlee",
         time: "23:00",
         place: "Lovelee, Amsterdam",
-        age: "18+",
+        age: "21+",
         ticket: "Gastenlijst",
         tooltip: "We zetten jouw naam op de gastenlijst, <br />zodat je gratis of goedkoper<br /> naar binnen kan."
     },
     {
+        content_id:"show-2",
         img: show_img,
         img_desk: show_img_desk,
         name: "Freaky",
         time: "23:00",
-        place: "Lovelee, Amsterdam",
+        place: "Supperclub, Amsterdam",
         age: "18+",
         ticket: "Gastenlijst",
         tooltip: "We zetten jouw naam op de gastenlijst, <br />zodat je gratis of goedkoper<br /> naar binnen kan."
     },
     {
+        content_id:"show-3",
         img: show_img,
         img_desk: show_img_desk,
         name: "Mimi",
         time: "23:00",
-        place: "Lovelee, Amsterdam",
-        age: "18+",
+        place: "Chin Chin, Amsterdam",
+        age: "21+",
         ticket: "Gastenlijst",
         tooltip: "We zetten jouw naam op de gastenlijst, <br />zodat je gratis of goedkoper<br /> naar binnen kan."
     },
     {
+        content_id:"show-4",
         img: show_img,
         img_desk: show_img_desk,
         name: "Super Social",
         time: "23:00",
-        place: "Lovelee, Amsterdam",
-        age: "18+",
+        place: "Chicago Social Club, Amsterdam",
+        age: "21+",
         ticket: "Vriendenticket",
         tooltip: "Voor dit event verzekeren wij jou<br />van het aller goedkoopste <br />kaartje doormiddel een vriendenticket."
     },
@@ -101,6 +109,7 @@ const Donderdag = [
 
 const Vrijdag = [
     {
+        content_id:"show-5",
         img: show_img_2,
         img_desk: show_img_2_desk,
         name: "Happy feelings",
@@ -114,6 +123,7 @@ const Vrijdag = [
 
 const Zaterdag = [
     {
+        content_id:"show-6",
         img: show_img_2,
         img_desk: show_img_2_desk,
         name: "Happy feelings",

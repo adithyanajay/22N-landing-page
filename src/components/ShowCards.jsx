@@ -10,9 +10,11 @@ function ShowCards({
   age,
   ticket,
   tooltip_text,
+  id_key,
+  content_id
 }) {
   return (
-    <div className="bg-color-grey-800 flex items-center gap-5 my-5 rounded-md  hover:shadow-sm transition-all duration-500">
+    <div id={content_id} className="bg-color-grey-800 flex items-center gap-5 my-5 rounded-md  hover:shadow-sm transition-all duration-500">
       <div className="showcard-imgbg-red-50">
         <img src={img} alt="show-image w-full" className="md:hidden" />
         <img src={img_desk} alt="" className="hidden md:block w-full" />
@@ -33,16 +35,17 @@ function ShowCards({
             {ticket}
             <span
               className="tooltip cursor-pointer"
-              data-tooltip-id="my-tooltip-html-prop"
+              data-tooltip-id={`my-tooltip-html-prop${id_key}`}
               data-tooltip-place="right"
             >
               <img src={tooltip} alt="tooltip" />
               <ReactTooltip
-                id="my-tooltip-html-prop"
+                id={`my-tooltip-html-prop${id_key}`}
                 openOnClick="true"
                 html={`<div style= "color:#5559DF;" >${tooltip_text} </div>`}
                 className="tooltip"
               />
+              {console.log(tooltip_text)}
             </span>
           </div>
         </div>

@@ -19,6 +19,10 @@
   border-radius: 12px;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 
 /* css default changes */
 * {
