@@ -16,7 +16,7 @@ function Searchlist({display}) {
                 <img src={data.img} alt="img" />
               </div>
               <div className="search-card-data">
-                <h3 className="text-color-grey-900 text-lg">{data.title}</h3>
+                <h3 className="text-color-grey-900 text-base sm:text-lg">{data.title}</h3>
                 <div className="par flex justify-start items-center gap-2 ">
                   <p className="date text-color-grey-600 text-sm">{data.date}</p>
                   <img src={circle} alt="" />
