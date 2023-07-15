@@ -9,14 +9,10 @@
 }
 
 
-:root {
-  --rt-color-dark: white;
- 
-  
-} 
 
 .tooltip{
   border-radius: 12px;
+  background-color: white;
 }
 
 html {

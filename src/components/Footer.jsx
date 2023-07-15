@@ -2,7 +2,7 @@ import Newsletter from "./Newsletter";
 
 function Footer() {
   return (
-    <footer className="bg-deep-black border-t-2 border-color-grey-700 ">
+    <footer className="bg-deep-black border-t border-color-grey-700 ">
       <Newsletter />
       <div className="container w-full mx-auto text-center text-color-grey-500 text-sm pb-10 md:flex justify-center md:max-w-screen-md ">
         <div className="container justify-center flex gap-5 md:text-left pb-5">
