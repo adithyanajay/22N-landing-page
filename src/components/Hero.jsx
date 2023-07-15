@@ -7,18 +7,19 @@ import Searchlist from "./Searchlist";
 function Hero() {
   const [search, setSearch] = useState(false);
 
-  
   const searchListClose = (e) => {
-    if(search){
-      if(e.target.id!="searchlistbox" && e.target.id!="search-input"){
+    if (search) {
+      if (
+        e.target.id != "searchlistbox" &&
+        e.target.id != "search-input" &&
+        e.target.id != "search-icon"
+      ) {
         setSearch(false);
       }
     }
-    
-  }
+  };
 
-  document.addEventListener("click", searchListClose)
-
+  document.addEventListener("click", searchListClose);
 
   return (
     <div className="hero  pb-3 bg-hero-mobile bg-no-repeat bg-cover  border-b-color-grey-500 border-b-2  lg:bg-hero-desk ">
@@ -37,11 +38,11 @@ function Hero() {
             id="search-input"
             placeholder="Zoek evenement, clubavond, festival"
             className="w-10/12 py-3 text-sm outline-none bg-color-grey-100 text-black"
-            onFocus={()=>setSearch(true)}
-            onClick={()=>location.href="#search-input"}
+            onFocus={() => setSearch(true)}
+            onClick={() => (location.href = "#search-input")}
           />
         </div>
-        <Searchlist display={search}/>
+        <Searchlist display={search} />
         <div className="categories flex justify-left items-center gap-5 w-11/12 mx-auto">
           {categories.map((data, key) => {
             return <Category img={data.img} text={data.text} key={key} />;

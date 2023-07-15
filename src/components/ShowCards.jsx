@@ -1,5 +1,6 @@
 import { tooltip } from "../assets";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+import { Link, useNavigate } from "react-router-dom";
 
 function ShowCards({
   img,
@@ -11,10 +12,23 @@ function ShowCards({
   ticket,
   tooltip_text,
   id_key,
-  content_id
+  content_id,
 }) {
+  const navigate = useNavigate();
+  const toEvent = (content_id) => {
+    navigate(`/event-details`, { state: { id: content_id } });
+  };
+
   return (
-    <div id={content_id} className="bg-color-grey-800 flex items-center gap-5 my-5 rounded-md  hover:shadow-sm transition-all duration-500">
+    <div
+      id={content_id}
+      className="bg-color-grey-800 flex items-center gap-5 my-5 rounded-md  hover:shadow-sm transition-all duration-500 hover:scale-[1.02] cursor-pointer"
+      onClick={(e) => {
+        if (e.target.id != "tooltip") {
+          toEvent(content_id);
+        }
+      }}
+    >
       <div className="showcard-imgbg-red-50">
         <img src={img} alt="show-image w-full" className="md:hidden" />
         <img src={img_desk} alt="" className="hidden md:block w-full" />
@@ -31,21 +45,23 @@ function ShowCards({
           <div className="tag age bg-tag-bg-color px-1 rounded-md text-tag-text-color text-sm flex items-center justify-center ">
             {age}
           </div>
-          <div className="ticket bg-tag-bg-color px-1 rounded-md text-tag-text-color flex items-center justify-center gap-1 text-sm">
+          <div
+            className="ticket bg-tag-bg-color px-1 rounded-md text-tag-text-color flex items-center justify-center gap-1 text-sm"
+            id="tooltip"
+          >
             {ticket}
             <span
               className="tooltip cursor-pointer"
               data-tooltip-id={`my-tooltip-html-prop${id_key}`}
               data-tooltip-place="right"
             >
-              <img src={tooltip} alt="tooltip" />
+              <img src={tooltip} alt="tooltip" id="tooltip" />
               <ReactTooltip
                 id={`my-tooltip-html-prop${id_key}`}
                 openOnClick="true"
                 html={`<div style= "color:#5559DF;" >${tooltip_text} </div>`}
                 className="tooltip"
               />
-              {console.log(tooltip_text)}
             </span>
           </div>
         </div>

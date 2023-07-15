@@ -1,32 +1,38 @@
-import CalendarLink from "./components/CalendarLink"
-import CalendarLinks from "./components/CalendarLinks"
-import Footer from "./components/Footer"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import Shows from "./components/Shows"
-import shows from "./constants"
-
-
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import EventDetails from "./pages/EventDetails";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 function App() {
-  
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [pathname]);
 
   return (
-    <div className="app bg-color-bg-black">
+    <div className="app bg-color-bg-black ">
       <Navbar />
-      <Hero />
-      <section className="px-5 lg:max-w-screen-lg mx-auto">
-      <CalendarLinks />
-      
-      </section>
+      <div className="routes">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/event-details" element={<EventDetails />} />
+          <Route
+            path="*"
+            element={
+              <h1 className="min-h-screen flex justify-center items-center">
+                Page not found
+              </h1>
+            }
+          />
+        </Routes>
+      </div>
 
-      <section className="px-5 lg:max-w-screen-lg mx-auto pb-20">
-      {shows.map((data,key)=> {
-        return(<Shows name={data.show_name} date={data.show_date} list={data.shows} key={key} />)
-      })}
-      </section>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
