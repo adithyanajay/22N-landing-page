@@ -174,7 +174,7 @@ export const events = [
     id: "show_6",
     img: event_img,
     img_desk: event_img_desk,
-    name: "Happy feelings 16:00",
+    name: "Happy feelings",
     date: "9 June",
     time: "16:00",
     place: "Thuishaven, Amsterdam",
